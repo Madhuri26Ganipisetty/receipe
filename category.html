@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Categories</title>
+    <style>
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        .categories-page {
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .categories-page h1 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        .category {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        
+        .category h2 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        
+        .category p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        .category a {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .category a:hover {
+            background-color: #f4b042;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="categories-page">
+        <h1>Explore Recipe Categories</h1>
+        <div class="category">
+            <img src="maindishes.jpeg" alt="Main Dishes">
+            <h2>Main Dishes</h2>
+            <p>Explore hearty and satisfying main course recipes.</p>
+            <a href="maindish.php">View Recipes</a>
+        </div>
+        <div class="category">
+            <img src="dsert.jpeg" alt="Desserts">
+            <h2>Desserts</h2>
+            <p>Indulge in sweet treats with our dessert recipes.</p>
+            <a href="deserts.php">View Recipes</a>
+        </div>
+        <div class="category">
+            <img src="drinks.jpeg" alt="Drinks">
+            <h2>Drinks</h2>
+            <p>Quench your thirst with refreshing drink recipes.</p>
+            <a href="drinks.php">View Recipes</a>
+        </div><br><br><br>
+        <a href="home.html">HOME</a>
+    </div>
+</body>
+</html>

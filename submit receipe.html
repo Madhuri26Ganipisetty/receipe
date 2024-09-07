@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+   <style>
+    body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+    .add-recipe-page {
+        text-align: center;
+        padding: 50px;
+    }
+    
+    .add-recipe-page h1 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    
+    form label {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    form input[type="text"],
+    form select,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    form textarea {
+        resize: vertical;
+    }
+    
+    form button {
+        background-color: #ff6600;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    form button:hover {
+        background-color: #f4b042;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="add-recipe-page">
+        <h1>Add Your Recipe</h1>
+        <form action="recipie.php" method="post">
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" name="recipe-title" required>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="main-dishes">Main Dishes</option>
+                <option value="desserts">Desserts</option>
+                <option value="drinks">Drinks</option>
+            </select>
+            
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="3" required></textarea>
+            
+            <label for="process">Process:</label>
+            <textarea id="process" name="process" rows="6" required></textarea>
+
+            
+            <input type="submit" value="submit your recipie">
+        </form>
+    </div>
+</body>
+</html>

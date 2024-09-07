@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Home Page</title>
+<style>
+
+    body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #ff6600;
+        color: white;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+    nav li {
+        margin-right: 15px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+    
+    nav a:hover {
+        color: #f4b042;
+    }
+
+    .search-bar {
+        text-align: center;
+        margin: 30px 0;
+    }
+    
+    .search-bar input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .search-bar button {
+        padding: 10px 20px;
+        background-color: #ff6600;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .search-bar button:hover {
+        background-color: #f4b042;
+    }
+
+    .user-profile {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .user-profile a {
+        color: #ff6600;
+        text-decoration: none;
+    }
+    
+    .user-profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    .profile-dropdown {
+        display: none;
+        position:relative;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+    .user-profile:hover .profile-dropdown {
+        display: block;
+    }
+    
+    .profile-dropdown ul {
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .profile-dropdown li {
+        margin: 5px 0;
+    }
+    
+    .profile-dropdown a {
+        color: #333;
+        text-decoration: none;
+    }
+    footer {
+        background-color: #f8f8f8;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    footer ul {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    
+    footer li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+    @media screen and (max-width: 768px) {
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">RecipeShare</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="submit receipe.html">Submit Recipe</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    </div>
+    <div class="rec">
+        <h2>Famous Receipes</h2><br>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2HvufWz_g9ik2LUpdvLPuEsFH1Hp6Y0TaQ&usqp=CAU" alt="Biryani" style="height: 210px;"></a>
+    </a>
+    <div class="desc">
+        chicken-biryani-recipe</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://www.vegrecipesofindia.com/motichoor-ladoo-recipe-motichur-laddu/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvEWak1oNZR6W-JMgfHmVaCrTeMo2MOkxFg&usqp=CAU" style="height:210px"></a>
+    </a>
+    <div class="desc">Motichur Laddu</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://www.cookwithmanali.com/samosa-recipe/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu6FjbJc_sP8NI_3frd3WqqXXRJKawyxFsNg&usqp=CAU"></a>
+    <div class="desc">Samosa</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="https://www.vegrecipesofindia.com/hot-coffee-recipe-cafe-style/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBnYfFshGKfopDOTpax2E2owe0SCqQ6oq7A&usqp=CAU"></a>
+    <div class="desc">Coffee</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <center><b> We re supported by a group of recipe developers, food writers, recipe and product testers, photographers, and other creative professionals.</b></center>
+</div>
+
+    </div>
+    <div class="categories">
+        <!-- Category Icons -->
+    </div>
+    <div class="user-profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReNr2tV6uuvmORZKBUeu2Oxf9iH-wdYouxVw&usqp=CAU" alt="User Profile Picture">
+        <div class="profile-dropdown">
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+            <!-- Social media icons -->
+        </div>
+    </footer>
+</body>
+</html>
